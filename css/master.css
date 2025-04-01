@@ -56,6 +56,21 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
+  .secondary-title{
+    color: black;
+    margin-bottom: 2.5rem;
+    margin-top:2.5rem;
+  }
+  .title-box{
+  text-align: center;
+  text-transform: uppercase;
+  padding: ;
+  background-color: #ebf0f4;
+  border:4px solid #ad9979;
+  border-radius:8px;
+  
+  
+  }
 
   /* this controls how the bullet points in the resume page looks */
   ul {
@@ -63,3 +78,19 @@
     margin: 0 auto;
     text-align: left;
   }
+/*// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name */
+
+.dominetitle {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.dominetitle-italic { 
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  color:black;
+}
