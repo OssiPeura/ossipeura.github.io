@@ -1,9 +1,112 @@
-/* Cascading stylesheet for the website */
+* {
+	box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h2,
+h3,
+a {
+	color: #34495e;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+  color:#718daa;
+}
 
-/* Text inside these asterisks and slashes are comments for human */
+.main-nav {
+	margin-top: 5px;
 
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 0%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+
+
+// Page content 
+article {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Main page variables */
   a {
-    color:blue;/* set the text color to blue here */
+    color:black;/* set the text color to blue here */
     text-decoration:none; /* This means we do not want hyperlinks to be underlined */
   }
 
@@ -33,9 +136,6 @@
     color: #075AAB;
     margin-bottom: 2.5rem;
     margin-top:2.5rem;
-
-    /* set the text color of to #075AAB here */
-    /* set both the bottom margin and top margin to 2.5rem here */
    }
 
   h3 {
@@ -56,10 +156,29 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
   }
-
-  /* this controls how the bullet points in the resume page looks */
-  ul {
-    display: table;
-    margin: 0 auto;
-    text-align: left;
+  .secondary-title{
+    color: black;
+    margin-bottom: 2.5rem;
+    margin-top:2.5rem;
   }
+  .title-box{
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ebf0f4;
+  border:4px solid #ad9979;
+  border-radius:8px;  
+  }
+
+.dominetitle {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.dominetitle-italic { 
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  color:black;
+}
